@@ -1,4 +1,4 @@
-baut file acc.txt didalam foler yang sama dengan onmiiReff.py
+buat file acc.txt didalam foler yang sama dengan onmiiReff.py
 
 -pip install requests
 
