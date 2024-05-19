@@ -1,3 +1,5 @@
+baut file acc.txt didalam foler yang sama dengan onmiiReff.py
+
 -pip install requests
 
 -pip install BeautifulSoup4
