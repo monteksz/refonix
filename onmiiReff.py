@@ -164,7 +164,7 @@ def login_and_perform_actions(email, password):
     if http_code == 200:
         response_data = response.json()
         token = response_data['token']
-        print(f"Login berhasil untuk {email}, token: {token}")
+        print(f"Login berhasil untuk {email}\nToken: {token}")
 
         link_social_headers = {
             "accept": "*/*",
@@ -210,6 +210,7 @@ def login_and_perform_actions(email, password):
 # Main function to get email, register, get inbox ID, get message, and extract verification link
 def main():
     try:
+        print("=========================================================================")
         invite_code = input("Masukan Invite Code: ")
         num_accounts = int(input("Mau berapa banyak akun: "))
 
@@ -249,8 +250,8 @@ def main():
                     print("Failed to retrieve message data: No message data returned")
             else:
                 print("Failed to retrieve inbox ID")
-            print(f"Akun ke- {i+1} berhasil di verifikasi")
-            print("========")
+            print(f"Akun ke-{i+1} Telah selesai")
+            print("=========================================================================")
     except Exception as e:
         print(f'Error: {e}')
 
